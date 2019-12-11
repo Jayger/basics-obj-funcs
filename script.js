@@ -30,3 +30,19 @@ jane.calculateAge();
 console.log(john.lastName);
 console.log(jane.lastName);
 console.log(mark.lastName);
+
+// Additional Objects
+
+var Breath = function(name, element, forms){
+    this.name = name;
+    this.element = element;
+    this.forms = forms;
+}
+
+Breath.prototype.user = 'Tanjiro';
+
+var water = new Breath('Breath of Water', 'Water', 11);
+var sun = new Breath('Breath of Sun', 'Sun', 13);
+
+console.log(water.user);
+console.log(sun.user);
